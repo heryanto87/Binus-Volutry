@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/car_headline"
+        android:layout_width = "match_parent"
+        android:layout_height = "300dp"
+        app:pageColor = "@color/white"
+        app:fillColor = "@color/lightBlueColor"
+        app:slideInterval="4000"
+        app:radius = "6dp"
+        app:strokeColor = "#FF777777"
+        app:strokeWidth = "1dp"
+    />
+
+
+    <RelativeLayout
+        android:layout_below="@id/car_headline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/box"
+        android:elevation="2dp">
+        <TextView
+            android:id="@+id/tv_newevent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Event"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="20dp"
+            />
+        <HorizontalScrollView
+            android:layout_below="@id/tv_newevent"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:id="@+id/gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PagePenerimaanActivity">
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:src="@drawable/ic_penerimaan"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_congrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/congratulation"
+        android:layout_below="@+id/iv_check"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        />
+
+    <ScrollView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_congrats"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="15dp"
+        android:scrollbars="none"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tv_welcome_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_message"
+                style="@style/textPagePenerimaan"
+                />
+
+            <TextView
+                android:id="@+id/tv_head_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_welcome_msg"
+                android:text="@string/tanggal"
+                android:textStyle="bold"
+                style="@style/textPagePenerimaan"
+                />
+
+            <TextView
+                android:id="@+id/tv_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tv_head_tanggal"
+                android:layout_below="@id/tv_welcome_msg"
+                android:text="22 Januari 2020"
+                style="@style/textPagePenerimaan"
+                />
+
+            <TextView
+                android:id="@+id/tv_head_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_head_tanggal"
+                android:text="@string/alamat"
+                style="@style/textPagePenerimaan"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tv_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tanggal"
+                android:layout_toRightOf="@id/tv_head_alamat"
+                style="@style/textPagePenerimaan"
+                android:text="Jl. Pintu Satu Senayan, RT.1/RW.3, Gelora, Tanahabang, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 10270"
+                />
+
+            <TextView
+                android:id="@+id/tv_end_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_alamat"
+                android:text="@string/end_message"
+                style="@style/textPagePenerimaan"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

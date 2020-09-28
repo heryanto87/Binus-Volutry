@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">VOLUTRY</string>
+    <string name="txt_sign_in">Sign in</string>
+    <string name="txt_login_sign">Please login to continue using our app</string>
+    <string name="email">Email</string>
+    <string name="gender">Gender</string>
+    <string name="dob">Date of Birth</string>
+    <string name="phone">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="description">Description</string>
+    <string name="education">Last Education</string>
+    <string name="senior_high">Senior High</string>
+    <string name="undergrad">Undergraduate</string>
+    <string name="working_exp">Working Experience</string>
+    <string name="supporting_material">Supporting Material</string>
+    <string name="skill">Skill</string>
+    <string name="achievement">Achievement</string>
+    <string name="update_resume">Update Resume</string>
+    <string name="history_head">Your Volunteer"'"s List</string>
+    <string name="detail">Detail</string>
+    <string name="date">Date :" "</string>
+    <string name="division">Division :" "</string>
+    <string name="condition">Condition</string>
+    <string name="activities">Activities : " "</string>
+    <string name="salary">Salary : " "</string>
+    <string name="congratulation">Congratulations</string>
+    <string name="tanggal">Tanggal :" "</string>
+    <string name="alamat">Alamat :" "</string>
+    <string-array name="Division">
+        <item>Consumption Commitee</item>
+        <item>Teaching Commitee</item>
+    </string-array>
+    <string name="welcome_message">Halo selamat anda keterima menjadi salah satu committe kami, peserta akan dihirapkan untuk datang pukul 17.00 pada alamat dan waktu yang tertera dibawah.</string>
+    <string name="end_message">Mohon untuk datang sesuai dengan info yang berikan, jangan sampai telat !</string>
+</resources>
